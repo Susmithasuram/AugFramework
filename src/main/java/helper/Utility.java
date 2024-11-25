@@ -12,11 +12,22 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class Utility
 {
+	public static void waitusingThread(int seconds)
+	{
+		try
+		{
+			Thread.sleep(seconds*1000);
+		} catch (InterruptedException e) 
+		{
+			
+		}
+	}
 	
 	public static String getCurrentDateTime()
 	{
